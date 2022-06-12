@@ -1,4 +1,4 @@
-public class product {
+public class Product {
     //data members
     private String name;
     private Double price;
@@ -9,7 +9,7 @@ public class product {
     private String color;
 
     //constructors
-    public product(String name, Double price, String category, int quantity, char size, String color) {
+    public Product(String name, Double price, String category, int quantity, char size, String color) {
         this.name = name;
         this.price = price;
         this.category = category;
@@ -18,7 +18,7 @@ public class product {
         this.color = color;
     }
 
-    public product(String name, Double price, String category, int quantity, String author) {
+    public Product(String name, Double price, String category, int quantity, String author) {
         this.name = name;
         this.price = price;
         this.category = category;
@@ -26,7 +26,7 @@ public class product {
         this.author = author;
     }
 
-    public product(String name, Double price, String category, int quantity) {
+    public Product(String name, Double price, String category, int quantity) {
         this.name = name;
         this.price = price;
         this.category = category;
