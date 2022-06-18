@@ -1,9 +1,9 @@
 public class Product {
     //data members
     private String name;
-    private Double price;
+    private static Double price;
     private String category;
-    private int quantity;
+    private static int quantity;
     private char size;
     private String author;
     private String color;
@@ -42,12 +42,12 @@ public class Product {
         this.name = name;
     }
 
-    public Double getPrice() {
+    public static Double getPrice() {
         return price;
     }
 
     public void setPrice(Double price) {
-        this.price = price;
+        Product.price = price;
     }
 
     public String getCategory() {
@@ -58,7 +58,7 @@ public class Product {
         this.category = category;
     }
 
-    public int getQuantity() {
+    public static int getQuantity() {
         return quantity;
     }
 
@@ -91,7 +91,7 @@ public class Product {
     }
 
     //methods
-    private boolean buy(){
+    public static boolean buy(){
         int quant = getQuantity();
         if ( quant > 0){
             quant--;

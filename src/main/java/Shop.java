@@ -1,8 +1,9 @@
+import java.util.Arrays;
 import java.util.Scanner;
 
 public class Shop {
     //data members
-    private static double totalAmount = 0;
+    public static double totalAmount = 0;
     static Product[] inventory = {
             new Product("Business Ritual Women’s Long Sleeve Top", 65.39, "Apparel", 4, 'L', "Blue"),
             new Product("The Art of Computer Programming", 190.54, "Books", 9, "Donald E. Knuth"),
@@ -20,13 +21,16 @@ public class Shop {
     //methods
     static void displayMenu() {
         Scanner scanner = new Scanner(System.in);
-        System.out.println("\nEnter the product index (0-4) you want to buy. To exit the shopping cart, enter any number other than 0 to 4");
+        System.out.println("\nEnter the product index (0-4) you want to buy. To exit the shopping cart, enter any number other than 0 to 4" + "\n"
+        // + inventory[index] getter + " : " +
+        + "0 : " + inventory[0].getName() + "\n"
+        + "1 : " + inventory[1].getName() + "\n"
+        + "2 : " + inventory[2].getName() + "\n"
+        + "3 : " + inventory[3].getName() + "\n"
+        + "4 : " + inventory[4].getName() + "\n"
+        );
 
-        String productPick = scanner.nextLine();
-        if (productPick == "0") {
-            System.out.println(Shop.getInventory().);
-        } else if (productPick == "1") {
-            System.out.println();
-        }
+        //
+
     }
 }
